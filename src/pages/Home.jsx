@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/Home.css";
 import NavBar from "../components/NavBar";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -74,24 +74,24 @@ const Home = () => {
           <h4>Ver mas</h4>
           <ul>
             <li>
-              <NavLink className="VerMas" to="/Weather-Forecast">
+              <Link className="VerMas" to="/Clima-React/Weather-Forecast">
                 Weather Forecast
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink className="VerMas" to="/Weather-Station">
+              <Link className="VerMas" to="/Clima-React/Weather-Station">
                 Weather Installation
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink className="VerMas" to="/climograma">
+              <Link className="VerMas" to="/Clima-React/climograma">
                 Climogramas
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink className="VerMas" to="/Contact">
+              <Link className="VerMas" to="/Clima-React/Contact">
                 Contact
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </div>
