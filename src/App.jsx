@@ -20,16 +20,17 @@ function App() {
         <Routes>
             <Route exact path="/" element={ <Home /> } />
             <Route exact path="/home" element={ <Home /> } />
+            <Route exact path="Clima-React/" element={ <Home /> } />
 
-            <Route exact path='/Weather-Station' element={ <Instalaciones /> } />
+            <Route exact path='Weather-Station' element={ <Instalaciones /> } />
 
-            <Route exact path="/Weather-Forecast" element={<WeatherForecast />} />
+            <Route exact path="Weather-Forecast" element={<WeatherForecast />} />
 
-            <Route exact path="/climograma" element={ <Climogramas /> } />
+            <Route exact path="climograma" element={ <Climogramas /> } />
 
-            <Route exact path="/Contact" element={ <Contact /> } />
+            <Route exact path="Contact" element={ <Contact /> } />
             
-            <Route path="*" element={ <Error404 /> } />
+            <Route path="Clima-React/*" element={ <Error404 /> } />
             
             {/* <Route path="/Proyects" element={ <Proyects /> } />
             <Route path="/about" element={ <About /> } />
