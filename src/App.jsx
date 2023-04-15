@@ -30,7 +30,6 @@ function App() {
 
             <Route exact path="Contact" element={ <Contact /> } />
             
-            <Route path="Clima-React/*" element={ <Error404 /> } />
             <Route path="*" element={ <Error404 /> } />
             
             {/* <Route path="/Proyects" element={ <Proyects /> } />
