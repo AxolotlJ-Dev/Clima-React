@@ -1,0 +1,125 @@
+
+
+/* Card */
+.home{
+    text-align: center;
+}
+
+.card{
+    max-width: 80%;
+}
+
+.card-title{
+    position: absolute;
+    padding: 20px;
+}
+
+.card-date{
+    position: absolute;
+    padding-left: 20px;
+    margin-top: 60px;
+}
+
+
+.card-time{
+    position: absolute;
+    padding-left: 20px;
+    margin-top: 90px;
+}
+
+
+
+.conted{
+    display: flex;
+    position: relative;
+}
+
+.card-temp{
+    display: flex;
+    padding-left: 20px;
+    margin: 0;
+    
+}
+
+.card-desc{
+    padding-left: 20px;
+}
+
+.hijo{
+  /* centrado vertical */
+  position: absolute;
+  top: 80%;
+  margin-top: -25px; /* (- menos) la mitad del valor de la altura del elemento hijo */
+
+
+}
+
+/* mb-3 mx-auto bg-dark text-light */
+
+.card-text{
+    margin-left: 15px;
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+
+
+.cardW{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #111010;
+    color: #fff;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    min-height: 400px;
+   
+}
+
+.cardW .card-img{
+    display: flex;
+    justify-content: center;
+
+    position: static;
+    border-radius: 15px;
+
+}
+
+.card-mini{
+    border-radius: 15px;
+    border: 2px solid #fff;
+}
+
+.line {
+    border: 1.8px solid #ffffff;
+    opacity: 1;
+
+}
+
+/* form */
+
+.form-input{
+    border-radius: 15px;
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+
+.form-input button{
+    background-color: #000000;
+    border-radius: 15px;
+    width: 60px;
+}
+
+.form-input button:hover{
+    background: #262626;
+}
+
+.form-input input {
+    border-radius: 15px;
+    text-align: center;
+    border: 0 solid transparent ;
+}
+
+.form-input input:hover{
+    border: 0 solid transparent ;
+}
