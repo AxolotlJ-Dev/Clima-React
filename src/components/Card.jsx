@@ -43,7 +43,7 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
       "/" +
       forecast.list[1].dt_txt.substring(5, 7) +
       "/" +
-      forecast.list[1].dt_txt.substring(0, 4) +
+      forecast.list[1].dt_txt.substring(11, 13) +
       " " +
       Time3;
     forecastDate6 =
@@ -51,7 +51,7 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
       "/" +
       forecast.list[2].dt_txt.substring(5, 7) +
       "/" +
-      forecast.list[2].dt_txt.substring(0, 4) +
+      forecast.list[2].dt_txt.substring(11, 13) +
       " " +
       Time6;
     forecastDate9 =
@@ -59,7 +59,7 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
       "/" +
       forecast.list[3].dt_txt.substring(5, 7) +
       "/" +
-      forecast.list[3].dt_txt.substring(0, 4) +
+      forecast.list[3].dt_txt.substring(11, 13) +
       " " +
       Time9;
   }
@@ -95,29 +95,29 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
               <div className="col-md-8">
                 <div className="text-start mt-3 m-1 card-mini">
                   <p className=" card-text">
-                  Temperatura Máxima:{" "}
+                    Temperatura Máxima:{" "}
                     {(weather.main.temp_max - 273.15).toFixed(1)}ºC
                   </p>
                   <p className=" card-text">
-                  Temperatura Mínima:{" "}
+                    Temperatura Mínima:{" "}
                     {(weather.main.temp_min - 273.15).toFixed(1)}ºC
                   </p>
                   <p className=" card-text">
-                  Sensación Térmica:{" "}
+                    Sensación Térmica:{" "}
                     {(weather.main.feels_like - 273.15).toFixed(1)}ºC
                   </p>
                   <p className=" card-text">
-                  Humedad: {weather.main.humidity}%
+                    Humedad: {weather.main.humidity}%
                   </p>
                   <p className=" card-text">
-                  Velocidad Del Viento: {weather.wind.speed} m/s{" "}
+                    Velocidad Del Viento: {weather.wind.speed} m/s{" "}
                   </p>
                 </div>
                 <hr className="line " />
 
                 <div className="row m-1 card-sub-mini">
                   <div className="col-4 card-mini">
-                    <p>{forecastDate3}h</p>
+                    <p>{ forecastDate3 }h</p>
                     <p className=" description">
                       {" "}
                       <img src={iconUrl3} alt="icon3" />{" "}
@@ -160,7 +160,9 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
       ) : (
         <div>
           <h2 className="text-light"> Sin datos</h2>
-          <h3 className='text-center'>Introduce el nombre de un "Municipio/estado/pais"</h3>
+          <h3 className="text-center">
+            Introduce el nombre de un "Municipio/estado/pais"
+          </h3>
         </div>
       )}
     </div>
