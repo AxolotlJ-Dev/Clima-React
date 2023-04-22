@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Clima-React/static/css/main.ad4925ac.css",
-    "main.js": "/Clima-React/static/js/main.ea05eebf.js",
+    "main.js": "/Clima-React/static/js/main.3a91cd03.js",
     "index.html": "/Clima-React/index.html",
     "main.ad4925ac.css.map": "/Clima-React/static/css/main.ad4925ac.css.map",
-    "main.ea05eebf.js.map": "/Clima-React/static/js/main.ea05eebf.js.map"
+    "main.3a91cd03.js.map": "/Clima-React/static/js/main.3a91cd03.js.map"
   },
   "entrypoints": [
     "static/css/main.ad4925ac.css",
-    "static/js/main.ea05eebf.js"
+    "static/js/main.3a91cd03.js"
   ]
 }
