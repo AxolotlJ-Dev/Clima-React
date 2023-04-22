@@ -9,6 +9,37 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
   var year = today.getFullYear();
   var date = day + "/" + month + "/" + year;
 
+  // Obtener la hora actual
+  const horaActual = new Date().getHours();
+
+  // Sumarle 3 a la hora actual
+  var hora1 = horaActual + 11;
+  // Verificar si se ha superado el ciclo de 24 horas
+  if (hora1 >= 24) {
+    hora1 -= 24;
+  }
+  // Crear el array con la hora actual y la hora nueva
+  var horaF1 = [horaActual, hora1];
+
+  var hora2 = horaActual + 14;
+  // Verificar si se ha superado el ciclo de 24 horas
+  if (hora2 >= 24) {
+    hora2 -= 24;
+  }
+  // Crear el array con la hora actual y la hora nueva
+  var horaF2 = [horaActual, hora2];
+
+  var hora3 = horaActual + 17;
+  // Verificar si se ha superado el ciclo de 24 horas
+  if (hora3 >= 24) {
+    hora3 -= 24;
+  }
+  // Crear el array con la hora actual y la hora nueva
+  var horaF3 = [horaActual, hora3];
+
+
+
+
   var url = "";
   var iconUrl = ";";
 
@@ -20,9 +51,6 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
   var forecastDate6 = "";
   var forecastDate9 = "";
 
-  var Time3 = parseFloat(Time) + parseFloat(3.0);
-  var Time6 = parseFloat(Time) + parseFloat(6.0);
-  var Time9 = parseFloat(Time) + parseFloat(9.0);
 
   console.log(Time);
 
@@ -38,30 +66,10 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
     iconUrl6 = url + forecast.list[2].weather[0].icon + ".png";
     iconUrl9 = url + forecast.list[3].weather[0].icon + ".png";
 
-    forecastDate3 =
-      forecast.list[1].dt_txt.substring(8, 10) +
-      "/" +
-      forecast.list[1].dt_txt.substring(5, 7) +
-      "/" +
-      forecast.list[1].dt_txt.substring(11, 13) +
-      " " +
-      Time3;
-    forecastDate6 =
-      forecast.list[2].dt_txt.substring(8, 10) +
-      "/" +
-      forecast.list[2].dt_txt.substring(5, 7) +
-      "/" +
-      forecast.list[2].dt_txt.substring(11, 13) +
-      " " +
-      Time6;
-    forecastDate9 =
-      forecast.list[3].dt_txt.substring(8, 10) +
-      "/" +
-      forecast.list[3].dt_txt.substring(5, 7) +
-      "/" +
-      forecast.list[3].dt_txt.substring(11, 13) +
-      " " +
-      Time9;
+    forecastDate3 = date + " " + horaF1[1];
+    forecastDate6 = date + " " + horaF2[1];
+    forecastDate9 = date + " " + horaF3[1];
+     
   }
 
   return (
@@ -161,7 +169,7 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
         <div>
           <h2 className="text-light"> Sin datos</h2>
           <h3 className="text-center">
-            Introduce el nombre de un "Municipio/estado/pais"
+            Introduce el nombre de un "Pais/Ciudad/Estado"
           </h3>
         </div>
       )}
