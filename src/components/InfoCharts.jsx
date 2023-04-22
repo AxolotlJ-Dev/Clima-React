@@ -94,7 +94,12 @@ const InfoCHarts = ({ loadingData, showData, weather ,forecast }) => {
           {/* <Line data={midata} options={misoptions}/> */}
         </div>
       ) : (
-        <h2 className=" text-light"> Sin datos</h2>
+        <div>
+          <h2 className="text-light"> Sin datos</h2>
+          <h3 className='text-center'>Introduce el nombre de un "Municipio/estado/pais"</h3>
+        </div>
+        
+        
       )}
     </div>
   );

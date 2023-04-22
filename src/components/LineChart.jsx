@@ -27,7 +27,37 @@ const LineChart = (props) => {
     Filler
   );
 
-  var meses = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+ // Obtener la hora actual
+const horaActual = new Date().getHours();
+
+// Crear la sucesión de la hora actual más 3 en 3
+const sucesion = [];
+let valor = horaActual;
+for (let i = 0; i < 12; i++) {
+  sucesion.push(valor);
+  valor = (valor + 3) % 24; // El operador módulo (%) permite volver al inicio después de la hora 23
+}
+
+// Imprimir el array resultante
+console.log(sucesion); // Ejemplo de salida: [19, 22, 1, 4, 7, 10, 13, 16, 19, 22, 1, 4]
+
+
+  var horas = [
+    sucesion[0],
+    sucesion[1],
+    sucesion[2],
+    sucesion[3],
+    sucesion[4],
+    sucesion[5],
+    sucesion[6],
+    sucesion[7],
+    sucesion[8],
+    sucesion[9],
+    sucesion[10],
+    sucesion[11],
+
+
+  ];
   var humedad = [
     props.humidity1,
     props.humidity2,
@@ -46,7 +76,7 @@ const LineChart = (props) => {
   ];
 
   var midata = {
-    labels: meses,
+    labels: horas,
     datasets: [
       // Cada una de las líneas del gráfico
       {
@@ -156,6 +186,15 @@ const LineChart = (props) => {
     },
     scales: {
       y: {
+        title: {
+          display: true,
+          text: "Grados ºC del 1 al 100",
+          color: "#fff",
+          font: {
+            size: 20,
+            // weight: "bold",
+          },
+        },
         min: 0,
         max: 100,
         ticks: { 
@@ -167,6 +206,15 @@ const LineChart = (props) => {
         },
       },
       x: {
+        title: {
+          display: true,
+          text: "Horas de 3 en 3",
+          color: "#fff",
+          font: {
+            size: 20,
+            // weight: "bold",
+          },
+        },
         ticks: { color: "#fff" },
         grid: {
           color: "#636363", // Color de las líneas del eje X
