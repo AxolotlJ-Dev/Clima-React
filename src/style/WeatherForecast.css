@@ -123,3 +123,8 @@
 .form-input input:hover{
     border: 0 solid transparent ;
 }
+
+
+.datecardInfo{
+    z-index: 2;
+}

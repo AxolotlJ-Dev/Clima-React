@@ -79,9 +79,11 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
           <div className=" cardW">
             <div className="row g-0">
               <div className=" col-md-4 conted">
-                <h3 className="card-title">{weather.name}</h3>
-                <p className=" card-date">{date}</p>
-                <p className=" card-time">{Time}</p>
+                <div className=" datecardInfo">
+                  <h3 className="card-title">{weather.name}</h3>
+                  <p className=" card-date">{date}</p>
+                  <p className=" card-time">{Time}</p>
+                </div>
 
                 <div className="hijo">
                   <p className=" h2 card-temp">
