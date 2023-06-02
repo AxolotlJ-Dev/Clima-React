@@ -32,7 +32,7 @@ const Menu = (props) => {
                     document.body.classList.remove("nav-open");
                     props.closeNav();
                   }}
-                  to="Clima-React/Home"
+                  to="Clima-React/"
                 >
                   Home
                 </NavLink>
@@ -44,7 +44,7 @@ const Menu = (props) => {
                     document.body.classList.remove("nav-open");
                     props.closeNav();
                   }}
-                  to="Clima-React/Weather-Forecast"
+                  to="/Weather-Forecast"
                 >
                   {/* Weather Forecast */}
                   Pronóstico del tiempo
@@ -53,7 +53,7 @@ const Menu = (props) => {
 
               <li className="link">
                 <NavLink
-                  to="Clima-React/Weather-Station"
+                  to="/Weather-Station"
                   onClick={() => {
                     document.body.classList.remove("nav-open");
                     props.closeNav();
@@ -66,7 +66,7 @@ const Menu = (props) => {
 
               <li className="link">
                 <NavLink
-                  to="Clima-React/climograma"
+                  to="/climograma"
                   onClick={() => {
                     document.body.classList.remove("nav-open");
                     props.closeNav();
@@ -77,7 +77,7 @@ const Menu = (props) => {
               </li>
               <li className="link">
                 <NavLink 
-                  to="Clima-React/Contact"
+                  to="/Contact"
                   onClick={() => {
                     document.body.classList.remove("nav-open");
                     props.closeNav();
