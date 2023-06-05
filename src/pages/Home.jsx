@@ -70,7 +70,7 @@ const Home = () => {
         </div>
 
         <hr className=" line" />
-        <div className=" tree mt-5">
+        {/* <div className=" tree mt-5">
           <Link className=" text-decoration-none text-white" to="/Clima-React/Weather-Forecast">
             <h4>Ver mas</h4>
           </Link>
@@ -92,6 +92,34 @@ const Home = () => {
             </li>
             <li>
               <Link className="VerMas" to="/Clima-React/Contact">
+                  Contacto
+              </Link>
+            </li>
+          </ul>
+        </div> */}
+
+        <div className=" tree mt-5">
+          <Link className=" text-decoration-none text-white" to="/Weather-Forecast">
+            <h4>Ver mas</h4>
+          </Link>
+          <ul>
+            <li>
+              <Link className="VerMas" to="/Weather-Forecast">
+                  Pronóstico del tiempo
+              </Link>
+            </li>
+            <li>
+              <Link className="VerMas" to="/Weather-Station">
+                  Instalación meteorológica
+              </Link>
+            </li>
+            <li>
+              <Link className="VerMas" to="/climograma">
+                Climogramas
+              </Link>
+            </li>
+            <li>
+              <Link className="VerMas" to="/Contact">
                   Contacto
               </Link>
             </li>
