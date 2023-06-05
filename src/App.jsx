@@ -18,18 +18,18 @@ function App() {
       
       <NavH />
         <Routes>
-            <Route path="Clima-React/" element={ <Home /> } />
-            {/* <Route path="Clima-React/home" element={ <Home /> } /> */}
+            <Route exact path="Clima-React/" element={ <Home /> } />
+            <Route exact path="Clima-React/home" element={ <Home /> } />
 
-            <Route path='/Weather-Station' element={ <Instalaciones /> } />
+            <Route exact path='Clima-React/Weather-Station' element={ <Instalaciones /> } />
 
-            <Route path="/Weather-Forecast" element={<WeatherForecast />} />
+            <Route exact path="Clima-React/Weather-Forecast" element={<WeatherForecast />} />
 
-            <Route path="/climograma" element={ <Climogramas /> } />
+            <Route exact path="Clima-React/climograma" element={ <Climogramas /> } />
 
-            <Route path="/Contact" element={ <Contact /> } />
+            <Route exact path="Clima-React/Contact" element={ <Contact /> } />
 
-            <Route path="/*" element={ <Error404 /> } />
+            <Route path="Clima-React/*" element={ <Error404 /> } />
             
             {/* <Route path="/Proyects" element={ <Proyects /> } />
             <Route path="/about" element={ <About /> } />
