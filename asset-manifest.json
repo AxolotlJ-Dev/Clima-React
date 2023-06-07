@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Clima-React/static/css/main.57430afa.css",
-    "main.js": "/Clima-React/static/js/main.a3905059.js",
+    "main.css": "/Clima-React/static/css/main.6bfbd6c1.css",
+    "main.js": "/Clima-React/static/js/main.763d77de.js",
+    "static/media/descargar.png": "/Clima-React/static/media/descargar.4a5661f392037ccf7389.png",
     "index.html": "/Clima-React/index.html",
-    "main.57430afa.css.map": "/Clima-React/static/css/main.57430afa.css.map",
-    "main.a3905059.js.map": "/Clima-React/static/js/main.a3905059.js.map"
+    "main.6bfbd6c1.css.map": "/Clima-React/static/css/main.6bfbd6c1.css.map",
+    "main.763d77de.js.map": "/Clima-React/static/js/main.763d77de.js.map"
   },
   "entrypoints": [
-    "static/css/main.57430afa.css",
-    "static/js/main.a3905059.js"
+    "static/css/main.6bfbd6c1.css",
+    "static/js/main.763d77de.js"
   ]
 }
