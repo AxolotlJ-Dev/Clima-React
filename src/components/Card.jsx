@@ -72,10 +72,14 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
      
   }
 
+  const imgFond = "https://images.pexels.com/photos/11838503/pexels-photo-11838503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  // https://images.pexels.com/photos/11838503/pexels-photo-11838503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+  // https://images.pexels.com/photos/2453292/pexels-photo-2453292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
   return (
     <div className=" mt-5">
       {showData === true ? (
-        <div className=" container">
+        <div className=" container cardC">
           <div className=" cardW">
             <div className="row g-0">
               <div className=" col-md-4 conted">
@@ -98,11 +102,11 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
 
                 <img
                   className=" card-img img-fluid"
-                  src="https://images.pexels.com/photos/2453292/pexels-photo-2453292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={imgFond}
                   alt="city"
                 />
               </div>
-              <div className="col-md-8">
+              <div className="col-md-8 text-center">
                 <div className="text-start mt-3 m-1 card-mini">
                   <p className=" card-text">
                     Temperatura Máxima:{" "}
@@ -125,7 +129,7 @@ const Card = ({ loadingData, showData, weather, forecast, Time }) => {
                 </div>
                 <hr className="line " />
 
-                <div className="row m-1 card-sub-mini">
+                <div className="row m-1 card-sub-mini ">
                   <div className="col-4 card-mini">
                     <p>{ forecastDate3 }h</p>
                     <p className=" description">

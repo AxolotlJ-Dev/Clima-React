@@ -5,9 +5,11 @@
     text-align: center;
 }
 
-.card{
-    max-width: 80%;
+
+.cardC{
+    text-align: -webkit-center;
 }
+
 
 .card-title{
     position: absolute;
@@ -50,16 +52,16 @@
   position: absolute;
   top: 80%;
   margin-top: -25px; /* (- menos) la mitad del valor de la altura del elemento hijo */
-
-
+  z-index: 2;
 }
 
 /* mb-3 mx-auto bg-dark text-light */
 
 .card-text{
-    margin-left: 15px;
+    /* margin-left: 15px; */
     font-size: 19px;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
+    text-align: center;
 }
 
 
@@ -73,6 +75,7 @@
     border-radius: 15px;
     border: 2px solid #fff;
     min-height: 400px;
+    width: 90%;
    
 }
 
@@ -88,6 +91,7 @@
 .card-mini{
     border-radius: 15px;
     border: 2px solid #fff;
+    padding: 2px;
 }
 
 .line {
